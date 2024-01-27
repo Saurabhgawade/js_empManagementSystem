@@ -1,0 +1,57 @@
+.modal{
+    position: fixed;
+    background-color: #ece8e833;
+   
+    width: 30%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content:flex-end;
+
+}
+
+.modal-body{
+
+    background-color:white;
+    padding: 20px;
+}
+
+.modal-body form{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+.hide-modal{
+    display: none;
+}
+
+.show-modal{
+    display: block;
+}
+
+.close-icon{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.employee-list{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+.employee-list,td,tr{
+    border: 2px solid blue;
+}
+
+.employee-list td{
+    text-align: center;
+    padding: 10px;
+}
+
+.center-modal{
+    justify-content: center;
+    align-items: center;
+}

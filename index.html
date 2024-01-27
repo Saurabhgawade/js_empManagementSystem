@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+</head>
+<body>
+    <div class="all">
+        <div class="addEmp">
+            <button id="addEmployeeBtn">Add Employee</button>
+            
+            <div class="modal hide-modal" id="modal">
+                <span class="Material-icons close-icon" id="closeIcon">close</span>
+                
+                <div class="modal-body">
+                    <h4>Add Employee details</h4>
+                    <form id="form">
+                        <input type="text" placeholder="Employee Name" name="fullname" required>
+                        <input type="email" placeholder="email" name="email" required>
+                        <input type="date" name="dob">
+                        <select name="role">
+                            <option value="SDE">SDE</option>
+                            <option value="developer">developer</option>
+                            <option value="tester">tester</option>
+                        </select>
+                        <div>
+                            <div>
+                                <input type="radio" id="male" value="male" name="gender" required />
+                                <label for="male">Male</label>
+                                
+
+                            </div>
+                            <div>
+                                <input type="radio" id="female" value="female" name="gender" required />
+
+                                <label for="female">Female</label>
+                                
+                            </div>
+                            <div>
+                                <input type="radio" id="other" value="other" name="gender" required />
+                                <label for="Other">Other</label>
+
+
+                            </div>
+                        </div>
+                        <button>Add Employee</button>
+                    </form>
+                </div>
+            </div>
+            <table class="employee-list" id="employee-list">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <td>Email</td>
+                        <td>Id</td>
+                        <td>Role</td>
+                        <td>Doj</td>
+                        <td>Gender</td>
+                        <td>option</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                
+
+            </table>
+        </div>
+
+    </div>
+    <div class="modal center-modal hide-modal " id="modal1">
+        <div class="modal-body">
+            <form id="form1">
+                <input type="text" placeholder="Employee Name" name="fullname" required>
+                <input type="email" placeholder="email" name="email" required>
+                <input type="date" name="dob">
+                <select name="role">
+                    <option value="SDE">SDE</option>
+                    <option value="developer">developer</option>
+                    <option value="tester">tester</option>
+                </select>
+                <div>
+                    <div>
+                        <input type="radio" id="male" value="male" name="gender" required />
+                        <label for="male">Male</label>
+                        
+
+                    </div>
+                    <div>
+                        <input type="radio" id="female" value="female" name="gender" required />
+
+                        <label for="female">Female</label>
+                        
+                    </div>
+                    <div>
+                        <input type="radio" id="other" value="other" name="gender" required />
+                        <label for="Other">Other</label>
+
+
+                    </div>
+                </div>
+                <button>Add Employee</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
